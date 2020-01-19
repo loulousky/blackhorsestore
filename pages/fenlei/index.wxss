@@ -1,0 +1,73 @@
+/* pages/fenlei/index.wxss */
+
+.container{
+
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 0rpx;
+
+}
+
+.left{
+flex: 2;
+
+}
+
+.right{
+flex: 5;
+}
+
+.goodtitle{
+  padding: 10rpx;
+  text-align: center;
+  color: black;
+  font-size: 26rpx;
+}
+
+.goodtitlecover{
+ 
+  color: red;
+  font-size: 36rpx;
+
+
+
+}
+
+.good_title{
+ color: gray;
+ font-size: 40rpx;
+ text-align: center;
+ margin-top: 15rpx;
+ margin-bottom: 15rpx;
+}
+
+.detail{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  flex-wrap: wrap;
+
+}
+
+.detail image{
+
+  width: 170rpx;
+  height: 170rpx;
+
+}
+
+.detail text{
+  text-align: center;
+  font-size: 26rpx;
+  color: black
+}
+
+.block_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  padding: 5rpx;
+}

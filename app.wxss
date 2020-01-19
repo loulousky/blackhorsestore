@@ -1,0 +1,8 @@
+@import "weui.wxss";
+view{
+  color: red;
+}
+
+page{
+  --themecolor:red;
+}

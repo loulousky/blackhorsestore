@@ -1,0 +1,50 @@
+<!--pages/car/index.wxml-->
+<view class="address" wx:if="{{!address.cityName}}" > 
+  <button type="primary" plain bindtap="gotoaddaddress">添加联系地址</button>
+</view>
+<view class="addressinfo" wx:else>
+  <view><text>{{address.userName}}</text></view>
+  <view><text>{{address.telNumber}}</text></view>
+  <view><text>{{address.provinceName+address.cityName+address.countyName+address.detailInfo}}</text></view>
+</view>
+<view class="cartitle">购物车</view>
+<view class="caritem" wx:for="{{goods}}" wx:key="goods_id">
+ <checkbox-group bindchange="itemcheckboxchange" data-flag="{{index}}">
+    <checkbox checked="{{item.checked}}"> </checkbox> 
+ </checkbox-group>
+
+
+<image src="{{item.goods_small_logo}}" mode="aspectFit"></image>
+
+<view class="content">
+<view class="name">{{item.goods_name}}</view>
+<view class="goodprice">${{item.goods_price}}</view>
+
+</view>
+
+<view class="judgegroup">
+ <view class="add" bindtap="add" data-index="{{index}}">+</view>
+ <view>{{item.num}}</view>
+ <view class="reduce" bindtap="reduce" data-index="{{index}}">-</view>
+</view>
+</view>
+
+
+<view class="bottom">
+
+<checkbox-group bindchange="allcheckchange" data-checked="{{allcheck}}">
+  <checkbox checked="{{allcheck}}">全选</checkbox>
+</checkbox-group>
+
+<view class="pricedesc">
+ <view class="pricegroup">
+   <text>总价:</text>
+   <view>{{totalprice}}$</view>
+ </view>
+ <view class="buy">结算({{goods.length}})</view>
+</view>
+</view>
+
+
+
+

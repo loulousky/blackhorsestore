@@ -1,0 +1,40 @@
+<!--pages/fenlei/index.wxml-->
+<search></search>
+<view class="container">
+
+<scroll-view class="left" scroll-y="true">
+
+
+<view class="goodtitle {{ position == index ? 'goodtitlecover':''}}" wx:for="{{leftmenu}}" wx:key="cat_id" bindtap="clickmenu" data-flag="{{index}}">
+  <text>{{item.cat_name}}</text>
+</view>
+
+
+</scroll-view>
+
+
+<scroll-view class="right" scroll-top="{{scroll}}" scroll-y="true" >
+ 
+ <view class="goodsdetail" wx:for="{{rightmenu}}" wx:key="cat_id" wx:for-item="goods">
+  <view class="good_title">{{goods.cat_name}}</view>
+  <view class="detail" >
+
+  <view wx:for="{{goods.children}}" wx:key="cat_id" class="block_container">
+  <navigator url="/pages/goods_list/index?cid={{item.cat_id}}"> <view><image src="{{item.cat_icon}}" mode="aspectFit" lazy-load="true"></image></view>
+   <view><text>{{item.cat_name}}</text></view></navigator>
+  
+
+   </view>
+   </view>
+ </view>
+
+
+
+
+
+
+</scroll-view>
+</view>
+
+
+

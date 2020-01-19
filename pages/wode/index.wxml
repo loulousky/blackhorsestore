@@ -1,0 +1,93 @@
+<!--pages/wode/index.wxml-->
+<view class="userIcon">
+
+  
+   <image class="bigicon" src="{{userInfo.avatarUrl}}">
+   </image>
+ <image class="smallicon" src="{{userInfo.avatarUrl}}" mode="aspectFill">
+   </image>
+
+   <view class="username">{{userInfo.nickName}}</view>
+</view>
+
+
+<view class="one">
+  
+  <view class="menu">
+    <view>0</view>
+    <view>收藏的店铺</view>
+  </view>
+
+  <view class="menu">
+<view>0</view>
+    <view>收藏的商品</view>
+  </view>
+
+
+<view class="menu">
+<view>0</view>
+    <view>关注的商品</view>
+  </view>
+
+
+<view class="menu">
+<view>0</view>
+    <view>我的足迹</view>
+  </view>
+
+
+
+</view>
+
+<view class="two">
+  <view></view>
+
+  <view class="menu">
+<view class="iconfont iconluogu"></view>
+    <view>全部订单</view>
+  </view>
+
+  <view class="menu">
+<view class="iconfont iconbianpao"></view>
+    <view>待付款</view>
+  </view>
+
+  <view class="menu">
+<view class="iconfont icondahongdenglong"></view>
+    <view>待收货</view>
+  </view>
+  <view class="menu">
+<view class="iconfont iconshanzi"></view>
+    <view>退款/退货</view>
+  </view>
+
+
+</view>
+
+<view class="three">
+ <view>收货地址管理</view>
+</view>
+
+<view class="four">
+
+<view class="four_item">
+
+ <view>联系客服</view>
+
+ <view>400618-4000</view>
+</view>
+
+
+<view class="four_item">
+ <view>意见反馈</view>
+</view>
+
+<view class="four_item">
+ <view>关于我们</view>
+</view>
+</view>
+
+<view class="five">
+ <view>把应用推荐给其它人</view>
+</view>
+

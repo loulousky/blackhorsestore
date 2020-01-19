@@ -1,0 +1,6 @@
+
+<view class="searchcontainerbox">
+<view class="searchcontainer" bindtap="searchjump">
+  <text class="icontubiao-2 iconfont searchtxt">搜索</text>
+</view>
+</view>

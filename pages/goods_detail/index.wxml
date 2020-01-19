@@ -1,0 +1,45 @@
+<swiper indicator-dots="true" autoplay="true">
+  <swiper-item  wx:for="{{goodsdetail.pics}}" wx:key="pics_id">
+   <image src="{{item.pics_big}}" bindtap="picsclick" data-pic="{{item.pics_big}}"></image>
+  </swiper-item>
+</swiper>
+
+<view><text class="price">${{goodsdetail.goods_price}}</text></view>
+
+<view class="desc">
+
+<view class="name"><text>{{goodsdetail.goods_name}}</text></view>
+<view class="line"></view>
+<view class="collect">
+  <view class="iconfont iconshoucang icon"></view>
+  <text>收藏</text>
+</view>
+</view>
+
+
+<text class="price">图文详情</text>
+
+<rich-text nodes="{{goodsdetail.goods_introduce}}"></rich-text>
+
+
+
+<view class="menu">
+ <view class="menu_one" bindtap="connect">
+   <text></text>
+   <text>联系客服</text>
+ </view>
+ <view class="menu_one" bindtap="share">
+ <text></text>
+   <text>分享</text>
+ </view>
+<view class="menu_one" bindtap="gotocar">
+<text></text>
+   <text>购物车</text>
+</view>
+<view class="menu_two" bindtap="addtocar">
+加入购物车
+</view>
+<view class="menu_twored" bindtap="buynow">
+ 立即购买
+</view>
+</view>

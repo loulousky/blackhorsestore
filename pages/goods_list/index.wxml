@@ -1,0 +1,24 @@
+<!--pages/goods_list/index.wxml-->
+<search></search>
+<tabs list="{{tabs}}" bindtabevent="bindtab">
+
+<block wx:if="{{currentTab===0}}" >
+
+<navigator url="/pages/goods_detail/index?cid={{item.goods_id}}" wx:for="{{goods}}" wx:key="cat_id">
+   <view class="goods_item">
+    <image src="{{item.goods_small_logo?item.goods_small_logo:'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=4519644,645929689&fm=26&gp=0.jpg'}}" mode="scaleToFill" lazy-load="true"></image>
+    <view class="goods_right">
+   <text class="name">{{item.goods_name}}</text>
+   <text class="price">${{item.goods_price}}</text></view>
+   </view> 
+</navigator>
+</block>
+<block wx:elif="{{currentTab===1}}">
+第二页
+</block>
+<block wx:else>
+第三页
+</block>
+
+
+</tabs>

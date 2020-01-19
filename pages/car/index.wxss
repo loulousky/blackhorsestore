@@ -1,0 +1,117 @@
+/* pages/car/index.wxss */
+.address{
+
+   padding: 35rpx;
+
+  
+
+}
+
+.addressinfo text{
+   color: black;
+
+   font-size: 30rpx;
+}
+
+.cartitle{
+ font-size: 36rpx;
+
+ padding: 10rpx;
+
+ border-bottom: 1rpx solid red;
+
+ border-top: 1rpx solid red;
+}
+
+.judgegroup{
+display: flex;
+justify-content: space-around;
+align-items: center;
+color: black;
+font-size: 36rpx;
+align-self: flex-end;
+}
+
+.caritem{
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+
+.caritem image{
+  width: 400rpx;
+  height: 200rpx;
+
+}
+
+.name{
+  color: black;
+  font-size: 25rpx;
+   overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+
+.add{
+ padding-bottom: 5rpx;
+ padding-top: 5rpx;
+ padding-left: 20rpx;
+ padding-right: 20rpx;
+ color: black;
+ background-color: whitesmoke;
+}
+
+.reduce{
+ color: black;
+ background-color: whitesmoke;
+ padding-bottom: 5rpx;
+ padding-top: 5rpx;
+ padding-left: 20rpx;
+ padding-right: 20rpx;
+}
+
+checkbox-group{
+  margin-left: 20rpx;
+}
+
+
+.bottom{
+width: 100%;
+position: fixed;
+bottom: 0;
+right: 0;
+left: 0;
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 80rpx;
+border-top: 1rpx solid gray;
+}
+
+.buy{
+background-color: red;
+color: white;
+height: 100%;
+width: 200rpx;
+text-align: center;
+padding: 10rpx
+}
+
+.pricedesc{
+ display: flex;
+ height: 100%;
+}
+
+.pricegroup{
+  display: flex;
+  color: black;
+  text-align: center;
+  height: 100%;
+  align-items: center;
+
+}

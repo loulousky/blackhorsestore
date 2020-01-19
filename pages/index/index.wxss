@@ -1,0 +1,63 @@
+.indexswiper{
+  height: 250rpx;
+}
+
+image{
+  width: 100%;
+}
+
+.chose{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 35rpx;
+
+}
+
+.chose_image{
+  width: 80rpx;
+  height:80rpx;
+}
+
+.louceng{
+  display: flex;
+  flex-direction: column;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+}
+
+.loucengitem_title{
+  height: 50rpx;
+  width: 500rpx;
+  margin-top: 10rpx;
+}
+
+
+.loucengitem_images{
+  display: flex;
+  flex-direction: row;  
+}
+
+.image1{
+  width: 250rpx;
+  height: 500rpx;
+  padding: 5rpx;
+  
+}
+
+.image2{
+  width: 235rpx;
+  height: 245rpx;
+
+  align-items: flex-start;
+}
+
+.otherimg{
+
+  display: flex;
+  flex-wrap: wrap;
+
+  
+
+}

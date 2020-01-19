@@ -1,0 +1,8 @@
+<view class="container">
+
+ <text wx:for="{{list}}" class="{{item.active? 'active': ''}}" bindtap="clickitem" data-index="{{index}}">{{item.name}}</text>
+
+
+</view>
+
+<slot></slot>

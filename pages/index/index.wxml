@@ -1,0 +1,48 @@
+<search></search>
+<swiper class="indexswiper" autoplay="true" indicator-dots="true" indicator-active-color="black" >
+<view wx:for="{{imgs}}" wx:key="good_id">
+  <swiper-item item-id="{{item.good_id}}" ><navigator url="{{item.navigator_url}}" open-type="{{item.open_type}}"><image src="{{item.image_src}}" mode="aspectFill" ></image></navigator></swiper-item>
+</view>
+
+</swiper>
+
+
+<view class="chose">
+ <navigator wx:for="{{guides}}" wx:key="name"><image  class="chose_image" src="{{item.image_src}}" mode="scaleToFill"></image></navigator>
+</view>
+
+
+<view class="louceng">
+<view class="loucengitem" wx:for="{{louceng}}" wx:key="name">
+
+  <image class="loucengitem_title" src="{{item.floor_title.image_src}}" mode="aspectFit" lazy-load="true"></image>
+
+  <view class="loucengitem_images" >
+
+ 
+   <navigator wx:for="{{item.product_list}}" wx:key="image_src" wx:for-item="good"   open-type="{{good.open_type}}" url="{{good.navigator_url}}"> 
+   
+   <block wx:if="{{index==0}}"> <image  class="image1" src="{{good.image_src}}" ></image></block>
+   <!-- <block wx:else><image  class="image1" src="{{good.image_src}}" ></image></block> -->
+   
+   </navigator>
+    
+
+
+<view class="otherimg">
+
+   <navigator wx:for="{{item.product_list}}" wx:key="image_src" wx:for-item="good"   open-type="{{good.open_type}}" url="{{good.navigator_url}}"> 
+   
+   <block wx:if="{{index!=0}}"> <image  class="image2" src="{{good.image_src}}" ></image></block>
+   <!-- <block wx:else><image  class="image1" src="{{good.image_src}}" ></image></block> -->
+   
+   </navigator>
+</view>
+  </view>
+    
+
+
+</view>
+</view>
+
+

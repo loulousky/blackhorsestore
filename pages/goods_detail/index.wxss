@@ -1,0 +1,132 @@
+swiper{
+
+  width: 100%;
+  height: 400rpx;
+  text-align: center;
+
+}
+
+swiper image{
+
+  width: 400rpx;
+  height: 400rpx;
+
+}
+.price{
+  margin-left: 25rpx;
+  margin-top: 10rpx;
+  font-size: 36rpx;
+}
+
+
+/****
+***收藏
+**/
+
+@font-face {font-family: "iconfont";
+  src: url('//at.alicdn.com/t/font_1606077_mvkoc6iuw7.eot?t=1579227047390'); /* IE9 */
+  src: url('//at.alicdn.com/t/font_1606077_mvkoc6iuw7.eot?t=1579227047390#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAK0AAsAAAAABlAAAAJqAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCCcApYdQE2AiQDCAsGAAQgBYRtBzIbnQUR1Yttsr8ccEN2eFO0cghSuE5GkqVeJd3y1R7G/W5L0DQXmDnl4HkfD//tR7tvZtZE4nbRtAueVBMhiSeIlKanW4ZQNIpF8t/cjOEq9I8IxZKoV+B/+Y607HBp+NETLzzGth0NbIZJ+ki4Ngj6rwsh4gLMsKx6O4UNuFz3EQaB/D6w8jSVOBWRAVAIQwZcU38FNJA8X7hEBEUlRwIObDrALlyTbSQj3zB2wQs8T6DRqGWxZT1BvcKeFogbaxaoL/gVhaXqhdqGtUU8VaM+PU4fksST6PvxJ2minqQmsysOXjId1r6jk5FvVTsREAIEtLkGGcsoxNHG+L4sGD1rjBeTHKs0+I5VFdjEUc2C/XV2cTMYhpJnknqyRy1OoCT9PVic9DhSU+N5URRmojBqjtwkFHJx69NJWb62HGEgxJ63V4gLX3+wfyESot9xA5X5fb4sEFx9Nk4l7L+mAj45R97KYpiT+t05gt8iHdhWDLltTUWTNjqTnklTExo1ogK7O32baui5h3So13MnzjojGbJ606QiPX4xNZqsQNSqt4pGS3Y3N+lyUxalAYvuA4R2z5G0eoOs3UdSoX1FjV7/UKs9MhodD/ZsMhvWqDJqQQfmD6Olzbt2UXHpHcOxaM7LI8YbOY4hqIuqnOpxQ15iQfyERsSDZ1qhA5fhshDsTBNaKQaRvS1L3/SmwtKaqCSjFnRg/jBa2nzQW1Tl83cMx6K5o6ou+EaO4+BQF9UAUq/ZBlU9yjXxExoRD55phQ6MwmUh2JtHTWilGCZE97Z0uvmhmmJ73foDxawO25ilzvA8EQc6rN5CkgA=') format('woff2'),
+  url('//at.alicdn.com/t/font_1606077_mvkoc6iuw7.woff?t=1579227047390') format('woff'),
+  url('//at.alicdn.com/t/font_1606077_mvkoc6iuw7.ttf?t=1579227047390') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('//at.alicdn.com/t/font_1606077_mvkoc6iuw7.svg?t=1579227047390#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  color: black;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.iconshoucang:before {
+  content: "\e60f";
+}
+
+.desc{
+  display: flex;
+  align-content: center;
+}
+
+.name{
+
+ flex:5;
+ align-items: center;
+
+}
+
+.name text{
+  color: black;
+  font-size: 25rpx;
+  padding-left: 10rpx;
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+
+.line{
+ background-color: gray;
+ width: 2rpx;
+ height: 100rpx;
+ align-self: center;
+ margin-left: 10rpx;
+ margin-right: 10rpx;
+
+
+}
+
+.collect{
+ display: flex;
+ flex: 1;
+ flex-direction: column;
+ align-content: center;
+ justify-content: center;
+ color:black;
+ text-align: center;
+ font-size: 30rpx;
+}
+
+.collect text{
+ text-align: center;
+}
+
+.menu{
+  width: 100%;
+  position: fixed;
+  display: flex;
+  bottom: 0;
+  font-size: 28rpx;
+  
+}
+
+.menu_one{
+ flex: 1;
+ text-align: center;
+ align-self: center;
+ background-color: white;
+ padding: 10rpx;
+ color: black;
+
+}
+
+
+.menu_two{
+   flex: 1.2;
+   text-align: center;
+   background-color: orange;
+   color: white;
+   padding: 10rpx;
+}
+
+.menu_twored{
+   flex: 1.2;
+   text-align: center;
+   background-color: red;
+   color: white;
+  padding: 10rpx;
+}

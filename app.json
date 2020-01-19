@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/fenlei/index",
+    "pages/car/index",
+    "pages/wode/index",
+    "pages/goods_detail/index",
+    "pages/goods_list/index",
+    "pages/login/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ff0000",
+    "navigationBarTitleText": "黑马优购",
+    "navigationBarTextStyle": "white"
+  },
+
+  "tabBar": {
+    "selectedColor": "#ff0000",
+     "color": "#000000",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "icons/home.png",
+      "selectedIconPath": "icons/home.png"
+    },
+    {
+      "pagePath": "pages/fenlei/index",
+      "text": "分类",
+      "iconPath": "icons/fenlei.png",
+      "selectedIconPath": "icons/fenlei.png"
+    },
+    {
+      "pagePath": "pages/car/index",
+      "text": "购物车",
+      "iconPath": "icons/gouwuche.png",
+      "selectedIconPath": "icons/gouwuche.png"
+    },
+    {
+      "pagePath": "pages/wode/index",
+      "text": "我的",
+      "iconPath": "icons/wo.png",
+      "selectedIconPath": "icons/wo.png"
+    }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
